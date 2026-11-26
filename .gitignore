@@ -1,0 +1,7 @@
+node_modules/
+*.db
+*.db-wal
+*.db-shm
+wechat-mp-data/
+# temporary worlds written by tests/fuzz-sync.mjs while it runs
+tests/fixtures/fuzz-*.json

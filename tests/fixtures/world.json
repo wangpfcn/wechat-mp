@@ -1,0 +1,26 @@
+{
+  "_comment": "Fictional accounts and articles for offline tests. Times are relative to now (hoursAgo).",
+  "accounts": [
+    { "id": "MP_WXS_1001", "name": "示例研究所", "intro": "虚构的券商研究号，仅用于测试" },
+    { "id": "MP_WXS_1002", "name": "示例新闻社", "intro": "虚构的新闻号，仅用于测试" },
+    { "id": "MP_WXS_1004", "name": "同名号", "intro": "同名测试一" },
+    { "id": "MP_WXS_1005", "name": "同名号", "intro": "同名测试二" }
+  ],
+  "generate": [
+    { "account": "MP_WXS_1001", "count": 120, "stepHours": 12, "startHoursAgo": 1, "titlePrefix": "【示例金工】周报第", "html": "ok.html", "idPrefix": "gen" }
+  ],
+  "articles": [
+    { "reviewId": "MP_WXS_1002_ok0001", "account": "MP_WXS_1002", "title": "示例快讯：工具只拿到标题", "hoursAgo": 0.5, "html": "header-only.html", "toolMarkdown": "## 示例快讯：工具只拿到标题\n\n原创 示例新闻社\n\n不喜欢" },
+    { "reviewId": "MP_WXS_1002_short01", "account": "MP_WXS_1002", "title": "示例视频帖", "hoursAgo": 1, "html": "short.html", "toolMarkdown": "## 示例视频帖" },
+    { "reviewId": "MP_WXS_1002_nocont1", "account": "MP_WXS_1002", "title": "示例无正文容器", "hoursAgo": 1.5, "html": "no-container.html", "toolMarkdown": "示例无正文容器\n\n这个页面没有正文容器，只有一段说明文字。为了让工具自带的提取结果超过两百字，这里补充更多的叙述内容：本段落模拟的是一种结构特殊的文章页面，正文没有放在常规的容器里，所以只能退回到工具自带的提取结果。补充的这些句子没有实际含义，只用来凑足篇幅，确保状态判断走的是自带提取且字数达标的分支，而不是被判成过短的文章。再写几句，继续凑字数，直到明显超过两百个字为止，这样测试结果才稳定可靠，不会因为字数统计的细微差别而在边界上来回跳动。最后再加一句收尾。" },
+    { "reviewId": "MP_WXS_1002_images1", "account": "MP_WXS_1002", "title": "示例图文：三张图两个地址", "hoursAgo": 2, "html": "images.html", "toolMarkdown": "## 示例图文" },
+    { "reviewId": "MP_WXS_1002_entity1", "account": "MP_WXS_1002", "title": "示例实体字符", "hoursAgo": 2.5, "html": "entities.html" },
+    { "reviewId": "MP_WXS_1002_weird01", "account": "MP_WXS_1002", "title": "CON", "hoursAgo": 3, "html": "weird-title.html" },
+    { "reviewId": "MP_WXS_1002_weird02", "account": "MP_WXS_1002", "title": "标题里有非法字符 <a>:\"b\"/c\\d|e?f*g 而且非常非常非常非常非常非常非常非常非常非常非常非常非常非常非常非常非常非常长的标题结尾...", "hoursAgo": 3.5, "html": "ok.html" },
+    { "reviewId": "MP_WXS_1002_insuf01", "account": "MP_WXS_1002", "title": "示例读取失败", "hoursAgo": 4, "readError": "INSUFFICIENT" },
+    { "reviewId": "MP_WXS_1002_nourl01", "account": "MP_WXS_1002", "title": "示例没有原文链接", "hoursAgo": 4.5, "noDocUrl": true },
+    { "reviewId": "MP_WXS_1001_paid001", "account": "MP_WXS_1001", "title": "示例付费文章", "hoursAgo": 400, "html": "paid.html", "status": "partial", "payType": 2 },
+    { "reviewId": "MP_WXS_1001_table01", "account": "MP_WXS_1001", "title": "示例表格文章", "hoursAgo": 401, "html": "table.html" },
+    { "reviewId": "MP_WXS_1002_ent2013", "account": "MP_WXS_1002", "title": "示例无权限文章", "hoursAgo": 5, "readError": "-2013" }
+  ]
+}

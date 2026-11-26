@@ -1,0 +1,55 @@
+{
+  "_comment": "world-ties.json with the 30 newest articles deleted upstream.",
+  "accounts": [
+    {
+      "id": "MP_WXS_4002",
+      "name": "同时群发测试号",
+      "intro": "虚构账号：所有群发的收录时间相同"
+    }
+  ],
+  "generate": [
+    {
+      "account": "MP_WXS_4002",
+      "count": 150,
+      "perPush": 3,
+      "stepHours": 0,
+      "startHoursAgo": 1,
+      "titlePrefix": "同时群发第",
+      "html": "ok.html",
+      "idPrefix": "t",
+      "jitter": true
+    }
+  ],
+  "skip": [
+    "MP_WXS_4002_t0000",
+    "MP_WXS_4002_t0001",
+    "MP_WXS_4002_t0002",
+    "MP_WXS_4002_t0003",
+    "MP_WXS_4002_t0004",
+    "MP_WXS_4002_t0005",
+    "MP_WXS_4002_t0006",
+    "MP_WXS_4002_t0007",
+    "MP_WXS_4002_t0008",
+    "MP_WXS_4002_t0009",
+    "MP_WXS_4002_t0010",
+    "MP_WXS_4002_t0011",
+    "MP_WXS_4002_t0012",
+    "MP_WXS_4002_t0013",
+    "MP_WXS_4002_t0014",
+    "MP_WXS_4002_t0015",
+    "MP_WXS_4002_t0016",
+    "MP_WXS_4002_t0017",
+    "MP_WXS_4002_t0018",
+    "MP_WXS_4002_t0019",
+    "MP_WXS_4002_t0020",
+    "MP_WXS_4002_t0021",
+    "MP_WXS_4002_t0022",
+    "MP_WXS_4002_t0023",
+    "MP_WXS_4002_t0024",
+    "MP_WXS_4002_t0025",
+    "MP_WXS_4002_t0026",
+    "MP_WXS_4002_t0027",
+    "MP_WXS_4002_t0028",
+    "MP_WXS_4002_t0029"
+  ]
+}

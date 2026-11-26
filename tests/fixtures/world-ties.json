@@ -1,0 +1,23 @@
+{
+  "_comment": "Pushes that all share three timestamps (stepHours 0, jitter): the listing cannot tell pushes apart by time, so the scan advances by its lower bound (articles / 8).",
+  "accounts": [
+    {
+      "id": "MP_WXS_4002",
+      "name": "同时群发测试号",
+      "intro": "虚构账号：所有群发的收录时间相同"
+    }
+  ],
+  "generate": [
+    {
+      "account": "MP_WXS_4002",
+      "count": 150,
+      "perPush": 3,
+      "stepHours": 0,
+      "startHoursAgo": 1,
+      "titlePrefix": "同时群发第",
+      "html": "ok.html",
+      "idPrefix": "t",
+      "jitter": true
+    }
+  ]
+}

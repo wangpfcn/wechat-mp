@@ -1,0 +1,9 @@
+{
+  "_comment": "Paging test: an account that sends 3 articles per push (like a research account's daily digest). 150 pushes, one every 12 hours, 450 articles over 75 days.",
+  "accounts": [
+    { "id": "MP_WXS_4001", "name": "群发测试号", "intro": "虚构账号：每次群发 3 篇" }
+  ],
+  "generate": [
+    { "account": "MP_WXS_4001", "count": 450, "perPush": 3, "stepHours": 12, "startHoursAgo": 1, "titlePrefix": "群发文章第", "html": "ok.html", "idPrefix": "p" }
+  ]
+}

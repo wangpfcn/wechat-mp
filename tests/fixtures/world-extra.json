@@ -1,0 +1,83 @@
+{
+  "_comment": "Extra fictional cases for regression tests (used with WXMP_MOCK_WORLD).",
+  "accounts": [
+    {
+      "id": "MP_WXS_2001",
+      "name": "回归测试号",
+      "intro": "虚构账号，仅用于回归测试"
+    },
+    {
+      "id": "MP_WXS_2002",
+      "intro": "没有名字的号"
+    }
+  ],
+  "articles": [
+    {
+      "reviewId": "MP_WXS_2001_vmention1",
+      "account": "MP_WXS_2001",
+      "title": "示例：谈谈验证码",
+      "hoursAgo": 1,
+      "html": "verify-mention.html",
+      "toolMarkdown": "示例：谈谈验证码\n\n这是一篇虚构的测试文章，正文没有放在常规容器里。文章讨论的是网站为什么会提示环境异常，以及用户为什么需要完成验证才能继续访问。它只是提到这些字样，本身并不是验证页，所以下载时不应该被当成风控而停下整批任务。这里再补几句话，让页面看起来像一篇普通的短文章，而不是一个只有按钮的验证页面。再多写一点，确保字数超过两百字的门槛，这样状态会是 ok，而不是 short。最后一句收尾。\n\n补充段落：这篇虚构文章只是在讨论验证码和环境异常提示的由来，帮助读者理解网站为什么要求完成验证，本身完全是普通内容。补充段落：这篇虚构文章只是在讨论验证码和环境异常提示的由来，帮助读者理解网站为什么要求完成验证，本身完全是普通内容。补充段落：这篇虚构文章只是在讨论验证码和环境异常提示的由来，帮助读者理解网站为什么要求完成验证，本身完全是普通内容。"
+    },
+    {
+      "reviewId": "MP_WXS_2001_paidnc01",
+      "account": "MP_WXS_2001",
+      "title": "示例付费试读",
+      "hoursAgo": 2,
+      "html": "paid-nocontainer.html",
+      "status": "partial",
+      "payType": 2,
+      "toolMarkdown": "示例付费试读\n\n付费文章的试读部分，页面结构特殊，没有常规的正文容器。这一段是工具自带提取得到的试读文字，长度超过两百字，用来检查即使字数够长，付费文章也必须标成 partial 而不是 ok。继续补充一些文字：试读部分通常只有开头几段，后面的正文需要付费才能看到，所以这里的内容并不完整。再写几句，凑够篇幅，保证测试条件稳定，不会因为字数统计的小差别而改变分支。结尾。"
+    },
+    {
+      "reviewId": "MP_WXS_2001_okarticle",
+      "account": "MP_WXS_2001",
+      "title": "示例正常文章",
+      "hoursAgo": 3,
+      "html": "ok.html"
+    },
+    {
+      "reviewId": "MP_WXS_2001_newline01",
+      "account": "MP_WXS_2001",
+      "title": "标题换行\n# 伪标题 *x*",
+      "hoursAgo": 4,
+      "html": "ok.html"
+    },
+    {
+      "reviewId": "MP_WXS_2002_noname001",
+      "account": "MP_WXS_2002",
+      "title": "无名号的文章",
+      "hoursAgo": 5,
+      "html": "ok.html"
+    },
+    {
+      "reviewId": "MP_WXS_2001_xyzAAA123",
+      "account": "MP_WXS_2001",
+      "title": "末六位和旧图片相同",
+      "hoursAgo": 6,
+      "html": "images.html"
+    },
+    {
+      "reviewId": "MP_WXS_2001_imgheavy1",
+      "account": "MP_WXS_2001",
+      "title": "示例以图片为主",
+      "hoursAgo": 7,
+      "html": "imgheavy.html"
+    },
+    {
+      "reviewId": "MP_WXS_2001_formula01",
+      "account": "MP_WXS_2001",
+      "title": "=1+1 看起来像公式的标题",
+      "hoursAgo": 8,
+      "html": "ok.html"
+    },
+    {
+      "reviewId": "MP_WXS_2001_media0001",
+      "account": "MP_WXS_2001",
+      "title": "示例含视频和语音",
+      "hoursAgo": 9,
+      "html": "media.html"
+    }
+  ]
+}

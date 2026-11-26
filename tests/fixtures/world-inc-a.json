@@ -1,0 +1,82 @@
+{
+  "_comment": "Incremental-sync test, before: 10 old articles.",
+  "accounts": [
+    {
+      "id": "MP_WXS_3001",
+      "name": "增量测试号",
+      "intro": "虚构账号：测试被打断的增量同步"
+    }
+  ],
+  "articles": [
+    {
+      "reviewId": "MP_WXS_3001_old0000",
+      "account": "MP_WXS_3001",
+      "title": "旧文章第1篇",
+      "hoursAgo": 200,
+      "html": "ok.html"
+    },
+    {
+      "reviewId": "MP_WXS_3001_old0001",
+      "account": "MP_WXS_3001",
+      "title": "旧文章第2篇",
+      "hoursAgo": 201,
+      "html": "ok.html"
+    },
+    {
+      "reviewId": "MP_WXS_3001_old0002",
+      "account": "MP_WXS_3001",
+      "title": "旧文章第3篇",
+      "hoursAgo": 202,
+      "html": "ok.html"
+    },
+    {
+      "reviewId": "MP_WXS_3001_old0003",
+      "account": "MP_WXS_3001",
+      "title": "旧文章第4篇",
+      "hoursAgo": 203,
+      "html": "ok.html"
+    },
+    {
+      "reviewId": "MP_WXS_3001_old0004",
+      "account": "MP_WXS_3001",
+      "title": "旧文章第5篇",
+      "hoursAgo": 204,
+      "html": "ok.html"
+    },
+    {
+      "reviewId": "MP_WXS_3001_old0005",
+      "account": "MP_WXS_3001",
+      "title": "旧文章第6篇",
+      "hoursAgo": 205,
+      "html": "ok.html"
+    },
+    {
+      "reviewId": "MP_WXS_3001_old0006",
+      "account": "MP_WXS_3001",
+      "title": "旧文章第7篇",
+      "hoursAgo": 206,
+      "html": "ok.html"
+    },
+    {
+      "reviewId": "MP_WXS_3001_old0007",
+      "account": "MP_WXS_3001",
+      "title": "旧文章第8篇",
+      "hoursAgo": 207,
+      "html": "ok.html"
+    },
+    {
+      "reviewId": "MP_WXS_3001_old0008",
+      "account": "MP_WXS_3001",
+      "title": "旧文章第9篇",
+      "hoursAgo": 208,
+      "html": "ok.html"
+    },
+    {
+      "reviewId": "MP_WXS_3001_old0009",
+      "account": "MP_WXS_3001",
+      "title": "旧文章第10篇",
+      "hoursAgo": 209,
+      "html": "ok.html"
+    }
+  ]
+}

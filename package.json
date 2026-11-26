@@ -1,0 +1,19 @@
+{
+  "name": "wechat-mp-skill",
+  "version": "0.1.0",
+  "description": "Search, track and download WeChat Official Account articles through WeRead (read-only), with a local SQLite store.",
+  "author": "Pengfei Wang",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "bin": {
+    "wxmp": "scripts/wxmp.mjs"
+  },
+  "scripts": {
+    "test": "node --no-warnings --test \"tests/*.test.mjs\"",
+    "doctor": "node --no-warnings scripts/wxmp.mjs doctor"
+  }
+}

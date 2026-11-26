@@ -1,0 +1,4 @@
+{
+  "_comment": "An account WeRead lists nothing for: what a list request for an unknown account ID gets back (an empty list, not an error).",
+  "accounts": [{ "id": "MP_WXS_5002", "name": "空列表测试号", "intro": "虚构账号：文章列表是空的" }]
+}

@@ -1,0 +1,19 @@
+#!/bin/sh
+# wxmp launcher for macOS / Linux: search / track / download WeChat Official Account articles (read-only).
+# Follows symlinks, so `ln -s <skill dir>/wxmp ~/.local/bin/wxmp` works.
+SELF=$0
+while [ -h "$SELF" ]; do
+  LINK_DIR=$(CDPATH= cd -P -- "$(dirname -- "$SELF")" && pwd)
+  SELF=$(readlink -- "$SELF")
+  case $SELF in
+    /*) ;;
+    *) SELF=$LINK_DIR/$SELF ;;
+  esac
+done
+DIR=$(CDPATH= cd -P -- "$(dirname -- "$SELF")" && pwd)
+if ! command -v node >/dev/null 2>&1; then
+  echo "wxmp 需要 Node.js 22.13 或更高，但这台电脑上找不到 node。" >&2
+  echo "安装方法见 README.md 的“安装 Node.js”一节：macOS 可以 brew install node，或到 https://nodejs.org 下载 LTS 安装包；Linux 发行版自带的往往太旧，用 nodejs.org 下载页给出的 nvm 命令安装（nvm install --lts）。装好后重新打开终端。" >&2
+  exit 1
+fi
+exec node --no-warnings "$DIR/scripts/wxmp.mjs" "$@"

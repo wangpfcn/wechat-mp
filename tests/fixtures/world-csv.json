@@ -1,0 +1,40 @@
+{
+  "_comment": "CSV export test: titles with line breaks and formula-like starts after spaces.",
+  "accounts": [
+    {
+      "id": "MP_WXS_5001",
+      "name": "表格测试号",
+      "intro": "虚构账号"
+    }
+  ],
+  "articles": [
+    {
+      "reviewId": "MP_WXS_5001_csv0001",
+      "account": "MP_WXS_5001",
+      "title": "第一行\n第二行",
+      "hoursAgo": 2,
+      "html": "ok.html"
+    },
+    {
+      "reviewId": "MP_WXS_5001_csv0002",
+      "account": "MP_WXS_5001",
+      "title": "  =SUM(1,2)",
+      "hoursAgo": 3,
+      "html": "ok.html"
+    },
+    {
+      "reviewId": "MP_WXS_5001_csv0003",
+      "account": "MP_WXS_5001",
+      "title": "甲 乙",
+      "hoursAgo": 4,
+      "html": "ok.html"
+    },
+    {
+      "reviewId": "MP_WXS_5001_csv0004",
+      "account": "MP_WXS_5001",
+      "title": "丙丁",
+      "hoursAgo": 5,
+      "html": "ok.html"
+    }
+  ]
+}

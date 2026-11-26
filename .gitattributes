@@ -1,0 +1,4 @@
+# LF everywhere: the sh launcher (wxmp) breaks with CRLF, and wxmp.cmd works with LF.
+* text=auto eol=lf
+# Bundled third-party files stay byte-for-byte as published (domino ships with CRLF).
+scripts/vendor/** -text

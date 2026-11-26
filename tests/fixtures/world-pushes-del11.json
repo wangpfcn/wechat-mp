@@ -1,0 +1,57 @@
+{
+  "_comment": "world-pushes with pushes 10..20 deleted upstream (11 pushes, more than the 10-push resume overlap).",
+  "accounts": [
+    {
+      "id": "MP_WXS_4001",
+      "name": "群发测试号",
+      "intro": "虚构账号：每次群发 3 篇"
+    }
+  ],
+  "generate": [
+    {
+      "account": "MP_WXS_4001",
+      "count": 450,
+      "perPush": 3,
+      "stepHours": 12,
+      "startHoursAgo": 1,
+      "titlePrefix": "群发文章第",
+      "html": "ok.html",
+      "idPrefix": "p"
+    }
+  ],
+  "skip": [
+    "MP_WXS_4001_p0030",
+    "MP_WXS_4001_p0031",
+    "MP_WXS_4001_p0032",
+    "MP_WXS_4001_p0033",
+    "MP_WXS_4001_p0034",
+    "MP_WXS_4001_p0035",
+    "MP_WXS_4001_p0036",
+    "MP_WXS_4001_p0037",
+    "MP_WXS_4001_p0038",
+    "MP_WXS_4001_p0039",
+    "MP_WXS_4001_p0040",
+    "MP_WXS_4001_p0041",
+    "MP_WXS_4001_p0042",
+    "MP_WXS_4001_p0043",
+    "MP_WXS_4001_p0044",
+    "MP_WXS_4001_p0045",
+    "MP_WXS_4001_p0046",
+    "MP_WXS_4001_p0047",
+    "MP_WXS_4001_p0048",
+    "MP_WXS_4001_p0049",
+    "MP_WXS_4001_p0050",
+    "MP_WXS_4001_p0051",
+    "MP_WXS_4001_p0052",
+    "MP_WXS_4001_p0053",
+    "MP_WXS_4001_p0054",
+    "MP_WXS_4001_p0055",
+    "MP_WXS_4001_p0056",
+    "MP_WXS_4001_p0057",
+    "MP_WXS_4001_p0058",
+    "MP_WXS_4001_p0059",
+    "MP_WXS_4001_p0060",
+    "MP_WXS_4001_p0061",
+    "MP_WXS_4001_p0062"
+  ]
+}

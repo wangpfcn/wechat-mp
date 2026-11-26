@@ -1,0 +1,25 @@
+{
+  "_comment": "One article per push, 120 pushes a day apart. The 21st push lost its article upstream but keeps its slot, so the first page of 50 pushes comes back with 49 articles.",
+  "accounts": [
+    {
+      "id": "MP_WXS_5001",
+      "name": "缺口测试号",
+      "intro": "虚构账号：第一页里有一次群发的文章被删"
+    }
+  ],
+  "generate": [
+    {
+      "account": "MP_WXS_5001",
+      "count": 120,
+      "perPush": 1,
+      "stepHours": 24,
+      "startHoursAgo": 1,
+      "titlePrefix": "缺口文章第",
+      "html": "ok.html",
+      "idPrefix": "h"
+    }
+  ],
+  "holes": [
+    "MP_WXS_5001_h0020"
+  ]
+}
